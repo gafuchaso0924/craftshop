@@ -1,4 +1,4 @@
 [
-  { "name": "ダイヤモンド", "price": "10,000G", "stock": 32 },
-  { "name": "エリトラ", "price": "非売品", "stock": 1 }
+  { "name": "ダイヤモンド", "price": "45", "stock": 32 },
+  { "name": "鉄", "price": "2.5", "stock": 1 }
 ]
