@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ルクス 在庫一覧</title>
+<style>
+body {
+  background:#0e0e0e;
+  color:#eee;
+  font-family:sans-serif;
+  padding:20px;
+}
+h1 { text-align:center; letter-spacing:3px; }
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+th,td {
+  border-bottom:1px solid #333;
+  padding:8px;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+
+<h1>ルクス 在庫一覧</h1>
+
+<table>
+<thead>
+<tr>
+  <th>商品名</th>
+  <th>価格</th>
+  <th>在庫</th>
+</tr>
+</thead>
+<tbody id="list"></tbody>
+</table>
+
+<script>
+fetch("data.json")
+  .then(res => res.json())
+  .then(items => {
+    const list = document.getElementById("list");
+    items.forEach(item => {
+      list.innerHTML += `
+        <tr>
+          <td>${item.name}</td>
+          <td>${item.price}</td>
+          <td>${item.stock}</td>
+        </tr>`;
+    });
+  });
+</script>
+
+</body>
+</html>
