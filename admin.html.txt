@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ショップ在庫</title>
+<style>
+body {
+  background: #0f0f0f;
+  color: #eee;
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+input, button {
+  padding: 6px;
+  background: #1a1a1a;
+  color: #eee;
+  border: 1px solid #444;
+}
+button {
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+.admin {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<h1>ルクス 在庫一覧</h1>
+
+<!-- 管理者ログイン -->
+<div id="login">
+  <input id="password" type="password" placeholder="管理者パスワード">
+  <button onclick="login()">ログイン</button>
+</div>
+
+<!-- 管理者用操作 -->
+<div class="admin" id="adminPanel">
+  <h3>商品追加</h3>
+  <input id="name" placeholder="商品名">
+  <input id="price" placeholder="価格">
+  <input id="stock" placeholder="在庫">
+  <button onclick="addItem()">追加</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>商品名</th>
+      <th>価格</th>
+      <th>在庫</th>
+      <th class="admin">操作</th>
+    </tr>
+  </thead>
+  <tbody id="list"></tbody>
+</table>
+
+<script>
+/* ===== 設定 ===== */
+const ADMIN_PASSWORD = "gafukun0924"; // ←ここを必ず変更！
+let isAdmin = false;
+
+/* ===== データ ===== */
+let items = JSON.parse(localStorage.getItem("items")) || [];
+
+/* ===== ログイン ===== */
+function login() {
+  const pw = document.getElementById("password").value;
+  if (pw === ADMIN_PASSWORD) {
+    isAdmin = true;
+    document.getElementById("login").style.display = "none";
+    document.querySelectorAll(".admin").forEach(e => e.style.display = "");
+    render();
+  } else {
+    alert("パスワードが違います");
+  }
+}
+
+/* ===== 保存 ===== */
+function save() {
+  localStorage.setItem("items", JSON.stringify(items));
+  render();
+}
+
+/* ===== 追加 ===== */
+function addItem() {
+  const name = nameInput.value;
+  const price = priceInput.value;
+  const stock = Number(stockInput.value);
+
+  if (!name) return;
+  items.push({ name, price, stock });
+  save();
+}
+
+/* ===== 表示 ===== */
+function render() {
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+
+  items.forEach((item, i) => {
+    list.innerHTML += `
+      <tr>
+        <td>${item.name}</td>
+        <td>${item.price}</td>
+        <td>${item.stock}</td>
+        ${isAdmin ? `
+        <td>
+          <button onclick="items[${i}].stock++; save()">＋</button>
+          <button onclick="items[${i}].stock--; save()">－</button>
+          <button onclick="items.splice(${i},1); save()">削除</button>
+        </td>` : ""}
+      </tr>
+    `;
+  });
+}
+
+render();
+</script>
+
+</body>
+</html>
