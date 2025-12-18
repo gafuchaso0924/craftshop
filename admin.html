@@ -78,6 +78,7 @@ let isAdmin = false;
 let items = JSON.parse(localStorage.getItem("items")) || [];
 
 /* ===== ログイン ===== */
+
 function login() {
   const pw = document.getElementById("password").value;
   if (pw === ADMIN_PASSWORD) {
