@@ -76,7 +76,11 @@ let isAdmin = false;
 
 /* ===== データ ===== */
 let items = [];
-
+  
+const saved = localStorage.getItem("items");
+if (saved) {
+  items = JSON.parse(saved);
+}
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
