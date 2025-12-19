@@ -75,7 +75,14 @@ const ADMIN_PASSWORD = "gafukun0924"; // ←ここを必ず変更！
 let isAdmin = false;
 
 /* ===== データ ===== */
-let items = JSON.parse(localStorage.getItem("items")) || [];
+let items = [];
+
+fetch("data.json")
+  .then(res => res.json())
+  .then(data => {
+    items = data;
+    render();
+  });
 
 /* ===== ログイン ===== */
 
