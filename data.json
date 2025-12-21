@@ -6,7 +6,7 @@
   { "name": "ネザライト", "price": "2300", "stock": 0 },
   { "name": "エメラルド鉱石", "price": "40", "stock": 0 },
   { "name": "ネザークォーツ", "price": "2.5", "stock": 0 },
-  { "name": "レッドストーン", "price": "5", "stock": 200 },
+  { "name": "レッドストーン", "price": "5", "stock": 0 },
   { "name": "金", "price": "10", "stock": 0 },
   { "name": "ゾンビスポナー", "price": "7000", "stock": 3 },
   { "name": "洞窟グモスポナー", "price": "6500", "stock": 4 },
