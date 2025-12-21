@@ -8,7 +8,7 @@
   { "name": "ネザークォーツ", "price": "2.5", "stock": 0 },
   { "name": "レッドストーン", "price": "5", "stock": 200 },
   { "name": "金", "price": "10", "stock": 0 },
-  { "name": "ゾンビスポナー", "price": "7000", "stock": 1 },
+  { "name": "ゾンビスポナー", "price": "7000", "stock": 3 },
   { "name": "洞窟グモスポナー", "price": "6500", "stock": 4 },
   { "name": "クモスポナー", "price": "7000", "stock": 2 },
   { "name": "ブレイズスポナー", "price": "9000", "stock": 3 },
