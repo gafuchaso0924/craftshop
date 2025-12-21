@@ -1,14 +1,14 @@
 [
   { "name": "エメラルド", "price": "35", "stock": 120 },
   { "name": "ダイヤモンド", "price": "40", "stock": 0 },
-  { "name": "鉄", "price": "10", "stock": 198 },
+  { "name": "鉄", "price": "10", "stock": 0 },
   { "name": "ネザライトアップグレード", "price": "2300", "stock": 3 },
   { "name": "ネザライト", "price": "2300", "stock": 0 },
   { "name": "エメラルド鉱石", "price": "40", "stock": 0 },
   { "name": "ネザークォーツ", "price": "2.5", "stock": 0 },
   { "name": "レッドストーン", "price": "5", "stock": 200 },
   { "name": "金", "price": "10", "stock": 0 },
-  { "name": "ゾンビスポナー", "price": "7000", "stock": 3 },
+  { "name": "ゾンビスポナー", "price": "7000", "stock": 1 },
   { "name": "洞窟グモスポナー", "price": "6500", "stock": 4 },
   { "name": "クモスポナー", "price": "7000", "stock": 2 },
   { "name": "ブレイズスポナー", "price": "9000", "stock": 3 },
@@ -17,6 +17,6 @@
   { "name": "ウィザースケルトンの頭", "price": "1350", "stock": 0 },
   { "name": "ファントムの被膜", "price": "30", "stock": 3 },
   { "name": "骨ブロック", "price": "10", "stock": 100 },
-  { "name": "金リンゴ", "price": "30", "stock": 12 },
+  { "name": "金リンゴ", "price": "30", "stock": 11 },
   { "name": "名札", "price": "250", "stock": 9 }
 ]
