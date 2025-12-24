@@ -1,7 +1,7 @@
 [
   { "name": "エメラルド", "price": "35", "stock": 120 },
   { "name": "ダイヤモンド", "price": "40", "stock": 0 },
-  { "name": "鉄インゴット", "price": "10", "stock": 0 },
+  { "name": "鉄インゴット", "price": "10", "stock": 576 },
   { "name": "ネザライトアップグレード", "price": "2300", "stock": 3 },
   { "name": "ネザライト", "price": "2300", "stock": 0 },
   { "name": "エメラルド鉱石", "price": "40", "stock": 0 },
