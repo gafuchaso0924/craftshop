@@ -1,12 +1,12 @@
 [
   { "name": "エメラルド", "price": "35", "stock": 120 },
-  { "name": "ダイヤモンド", "price": "40", "stock": 139 },
-  { "name": "鉄インゴット", "price": "10", "stock": 420 },
+  { "name": "ダイヤモンド", "price": "40", "stock": 0 },
+  { "name": "鉄インゴット", "price": "10", "stock": 0 },
   { "name": "ネザライトアップグレード", "price": "2300", "stock": 3 },
   { "name": "ネザライト", "price": "2300", "stock": 0 },
   { "name": "エメラルド鉱石", "price": "40", "stock": 0 },
   { "name": "ネザークォーツ", "price": "2.5", "stock": 620 },
-  { "name": "レッドストーン", "price": "5", "stock": 117 },
+  { "name": "レッドストーン", "price": "5", "stock": 0 },
   { "name": "金インゴット", "price": "10", "stock": 0 },
   { "name": "ゾンビスポナー", "price": "7000", "stock": 4 },
   { "name": "洞窟グモスポナー", "price": "6500", "stock": 4 },
@@ -14,9 +14,15 @@
   { "name": "ブレイズスポナー", "price": "9000", "stock": 3 },
   { "name": "シルバーフィッシュスポナー", "price": "10000", "stock": 1 },
   { "name": "ビーコン", "price": "5000", "stock": 0 },
-  { "name": "ウィザースケルトンの頭", "price": "1350", "stock": 1 },
+  { "name": "ウィザースケルトンの頭", "price": "1350", "stock": 0 },
   { "name": "ファントムの被膜", "price": "30", "stock": 3 },
   { "name": "骨ブロック", "price": "10", "stock": 100 },
   { "name": "金リンゴ", "price": "30", "stock": 11 },
   { "name": "名札", "price": "250", "stock": 9 }
+  { "name": "入れ食い3", "price": "450", "stock": 1 }
+  { "name": "ダメージ軽減4", "price": "450", "stock": 1 }
+  { "name": "シルクタッチ", "price": "450", "stock": 1 }
+  { "name": "幸運3", "price": "450", "stock": 1 }
+  { "name": "フレイム", "price": "450", "stock": 1 }
+  { "name": "無限", "price": "450", "stock": 1 }
 ]
